@@ -3,16 +3,326 @@
 .container_head {
     position:relative;
     display:flex;
-}
-.nav_menu {
-    display:flex;
-    list-style: none;
-    margin-left:2rem;
-    margin:0px;
-    padding:0px;
-}
-.nav_menu li {
-    margin-left:2rem;
+    background:$bg_blue;
+    padding:1.5rem;
+    position:relative;
+    .logo {
+        font-size:2.2rem;
+        line-height:2rem;
+        color: $txt_white;
+        font-weight: 500;
+    }
+        .nav_menu {
+            display:flex;
+            list-style: none;
+            margin-left:2rem;
+            margin:0px;
+            padding:0px;
+            line-height:2.8rem;
+            margin-left:8rem;
+   
+            li {
+                list-style: none;
+                margin-left: 2rem;
+            }
+                a {
+                    text-decoration: none;
+                    color:$txt_white;
+                    font-weight:lighter;
+                }
+                    i {
+                        margin:0 0.2rem;
+                        color:$txt_white;
+                }
+// ****************dropdown***********
+                    .dropdown {
+                        
+                        background: rgba(255, 255, 255, 0.9);
+                        position: absolute;
+                        width:7rem;
+                        height:0;
+                        transition:all 0.8s ;
+                        margin-left:-0.8rem;
+                                a {
+                                    color:$txt_black;
+                                    opacity: 0;
+                                    font-weight:500;
+                                }
+
+                        }
+                }
+            }
+            .nav_menu li:hover .dropdown {
+                height:140px;
+                border-radius:10px;
+               
+            }
+            .nav_menu li:hover .dropdown a {
+                opacity: 1;
+            }
+// **************************section1**************************
+
+main {
+    .grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        .heading {
+            font-size: 2.7rem;
+            line-height:3.2rem;
+            font-weight:700;
+            color:$txt_white;
+            margin:3.5rem 0;
+            letter-spacing: 0.2rem;
+        }
+        .text {
+            font-size:1rem;
+            color:$txt_grey;
+            line-height:1.5rem;
+            letter-spacing:0.2rem;
+            padding:0 1rem 0 0;
+            margin:1.5rem 0;
+
+        }
+        .btn {
+            font-size:1rem;
+            color:$txt_white;
+            line-height: 1.5rem;
+            padding: 0.4rem 0.8rem;
+            background:rgba(255,255,255,0.6);
+            border:none;
+            margin:1rem 0;
+
+        }
+        .img_head {
+            position:absolute;
+            top:0;
+            right:0;
+            width:53%;
+            }
+            .img_boat {
+                width:100%;
+                border-radius:50%;
+                border-top-right-radius: 0;
+                
+                }
+            }
+            .section_2 {
+                padding:5rem 0;
+                .grid {
+                    display:grid;
+                    width:70%;
+                    .section_2_container_1 {
+                        text-align:right;
+                        padding:4rem 1.8rem;
+                        h3 {
+                            font-size:1.5rem;
+                            font-weight:500;
+                            color:$txt_grey;
+                            line-height: 1.5rem;
+                        }
+                        h2 {
+                            font-size:1.8rem;
+                            line-height:2.2rem;
+                            font-weight:700;
+                            color:$txt_black;
+                            padding:1.5rem 0;
+
+                        }
+                        p {
+                            line-height:1.8rem;
+                            color:$txt_grey;
+                            font-size:0.9rem;
+                            font-weight:400;
+                            word-spacing:0.1rem;
+
+                        }
+                        button {
+                            background:$bg_blue;
+                        }
+                    }
+                    .section_2_container_2 {
+                        display:flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+                        justify-content: center;
+                        .box {
+                            display:flex;
+                            width: 13rem;
+                            height:11rem;
+                            background:$bg_grey;
+                            margin:1rem;
+                            box-shadow:-2px 2px 5px rgba(0, 0, 0, 0.6);
+                            align-items:center;
+                            justify-content: center;
+                                .icon{
+                                    background: $bg_yellow;
+                                }
+                        }
+                        .box1 {
+                            background:$bg_grey;
+                            margin-top:2rem;
+                                .icon1 {
+                                    background:$bg_red;
+                                }
+                        }
+                        .box {
+                            padding-bottom:2rem;
+                            .icon2 {
+                                background:$bg_sky;
+                            }
+                            h3 {
+                                position:absolute;
+                                margin-top:8rem;
+                                font-size:1.3rem;
+                                font-weight:500;
+                                
+                            }
+                        }
+                        .box {
+                            .icon3 {
+                                background:$bg_green;
+                            }
+                        }
+                    }
+                }
+            }
+            .section_3 {
+                padding:5rem 0;
+                background:$bg_grey;
+                .services_head {
+                    text-align:center;
+                    h3 {
+                        font-size:1.5rem;
+                        font-weight:500;
+                        color:$txt_grey;
+                        line-height: 1.5rem;
+                    }
+                    h2 {
+                        font-size:1.8rem;
+                        line-height:2.2rem;
+                        font-weight:700;
+                        color:$txt_black;
+                        padding:1.5rem 0;
+
+                    }
+                }
+                    .services_container {
+                        display:grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        align-items:center;
+                        grid-gap:2rem;
+                        margin:2rem 0;
+                        .service {
+                            text-align:center;
+                            
+                        }
+                    }
+            }
+            .section_4 {
+                .section_4_container {
+                    display:grid;
+                    grid-template-columns: repeat(2, 1fr);
+                        .section_4_image_container{
+                            .img_section_4 {
+                                width:100%;
+                                height: 100%;
+                                font-size:0;
+                                height:fit-content;
+                            }
+                        }
+                        .section_4_text_container {
+                            background:$bg_black;
+                            padding:4.5rem 7rem;
+                            word-spacing:0.3rem;
+                            .section_4_head {
+                                font-size:2.1rem;
+                                color:$txt_white;
+                                font-weight:500;
+                                line-height:2.8rem;
+                            }
+                            p {
+                                padding:1rem 0;
+                            }
+                        } 
     
-}
+                }
+                
+            }
+            .section_5 {
+                padding:4rem 0;
+                .section_5_head {
+                    text-align:center;
+                    h3 {
+                        font-size:1.5rem;
+                        font-weight:500;
+                        color:$txt_grey;
+                        line-height: 1.5rem;
+                    }
+                    h2 {
+                        font-size:1.8rem;
+                        line-height:2.2rem;
+                        font-weight:700;
+                        color:$txt_black;
+                        padding:1.5rem 0;
+
+                    }   
+                }
+                .team {
+                    display:grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-gap:2rem;
+                    padding: 3rem 0;
+
+                    .members {
+                        padding:1.5rem 2rem;
+                        text-align:center;
+                        box-shadow:-2px 2px 5px rgba(0, 0, 0, 0.6);
+                       
+                            .img_member {
+                                border-radius:50%;
+                            }
+                            h2 {
+                                font-size:1.2rem;
+                                font-weight: 600;
+                                line-height:1.5;
+                                letter-spacing: 0.2;
+                                color:$txt_blue;
+                                padding:1rem 0 0.5rem 0;
+                            }
+                            h3 {
+                                font-size:1rem;
+                                font-weight:400;
+                                line-height:1.4rem;
+                                color:$txt_black;
+                                padding:0 0 1.5rem 0;
+
+                            }
+                            p {
+                                padding:0.5rem 0;
+                            }
+                            button {
+                                background:$bg_blue;
+                                margin:0.5rem;
+                                padding:0.5rem 1rem;
+                            }
+
+                    }
+                }
+            }
+            
+        }
+        
+                
+                    
+           
+        
+        
+
+
+    
+    
+
+
+
+
 
