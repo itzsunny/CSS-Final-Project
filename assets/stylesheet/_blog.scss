@@ -1,0 +1,44 @@
+// ********************* blog ****************************
+
+.blog_container {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    margin:2rem 2rem;
+}
+.blogs {
+    box-shadow:-2px 2px 5px rgb(196, 188, 188);
+    padding:2rem;
+    background:#F5F5F5;
+    .img_blogs {
+        width:100%;
+    }
+    h2 {
+        font-size:1.6rem;
+        line-height:1.8;
+        color:$txt_black;
+        font-weight: 500;
+        padding:2.5rem 0 0 0;
+    }
+}
+
+
+
+.btn_container {
+    display:flex;
+    justify-content:space-between;
+
+    .eye {
+        padding-top:2rem;
+        padding-right: 0.5rem;
+    }
+    span {
+        margin-right:3rem;
+    }
+}
+.btn_blog {
+    a {
+        text-decoration: none;
+        color:$txt_white;
+    }
+}
