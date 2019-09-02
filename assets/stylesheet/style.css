@@ -447,7 +447,7 @@ footer .footer_container {
 }
 .new_sletter .mail_box input {
   border: none;
-  padding: 0.5rem 0.94rem;
+  padding: 0.5rem 2.8rem 0 1rem;
   color: txt_grey;
 }
 .new_sletter .mail_box input::placeholder {
@@ -652,11 +652,12 @@ main .grid .img_boat {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.section_4 .section_4_container .section_4_image_container {
+  height: 100%;
+}
 .section_4 .section_4_container .section_4_image_container .img_section_4 {
   width: 100%;
   height: 100%;
-  font-size: 0;
-  height: fit-content;
 }
 .section_4 .section_4_container .section_4_text_container {
   background: #000000;

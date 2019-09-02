@@ -113,12 +113,12 @@ main {
                 .section_4_container {
                     display:grid;
                     grid-template-columns: repeat(2, 1fr);
-                        .section_4_image_container{
+                        .section_4_image_container
+                        {
+                            height:100%;
                             .img_section_4 {
                                 width:100%;
-                                height: 100%;
-                                font-size:0;
-                                height:fit-content;
+                                height:100%;
                             }
                         }
                         .section_4_text_container {
